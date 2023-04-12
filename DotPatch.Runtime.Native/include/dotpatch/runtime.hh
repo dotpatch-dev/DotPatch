@@ -1,4 +1,5 @@
 #pragma once
 
-#include <dotpatch/runtime/panic.hh>
 #include <dotpatch/runtime/init.hh>
+#include <dotpatch/runtime/host.hh>
+#include <dotpatch/runtime/ManagedHost.hh>

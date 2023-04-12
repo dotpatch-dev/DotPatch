@@ -1,16 +1,24 @@
 #include <dotpatch/runtime.hh>
-#include <dotpatch/host.hh>
+#include <dotpatch/debug.hh>
 
 namespace dotpatch::runtime
 {
 	void Initialize()
 	{
-		host::LoadHostFXR();
-		auto managed = host::LoadManagedRuntime();
+		debug::InitializeDebugConsole();
+
+		runtime::LoadHostFXR();
+		auto managed = runtime::LoadManagedRuntime();
 	}
 
 	void Exit()
 	{
-		host::UnloadHostFXR();
+		MessageBoxA(nullptr, "Exit", "Exit", MB_OK);
+		runtime::UnloadHostFXR();
+
+		debug::ExitDebugConsole();
 	}
+
+
+	HINSTANCE gNativeModuleInstance;
 }

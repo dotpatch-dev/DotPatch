@@ -1,10 +1,14 @@
-#include <dotpatch/runtime.hh>
+#include <dotpatch/runtime/init.hh>
+
+#include <iostream>
 
 int main(int argc, const char** argv)
 {
-	using namespace dotpatch;
-	runtime::Initialize();
+	if (argc > 10)
+	{
+		dotpatch::runtime::Initialize();
+	}
 
-	runtime::Exit();
+	std::cin.get();
 	return 0;
 }
