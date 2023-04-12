@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33424.131
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotPatch.Runtime.Managed", "DotPatch.Runtime.Managed\DotPatch.Runtime.Managed.csproj", "{45B556C6-4962-451E-885D-58ECE1795190}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotPatch.Api", "DotPatch.Api\DotPatch.Api.csproj", "{6856EAA3-DAFE-40C5-9571-5D6B20788CDD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{45B556C6-4962-451E-885D-58ECE1795190}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45B556C6-4962-451E-885D-58ECE1795190}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45B556C6-4962-451E-885D-58ECE1795190}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45B556C6-4962-451E-885D-58ECE1795190}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6856EAA3-DAFE-40C5-9571-5D6B20788CDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6856EAA3-DAFE-40C5-9571-5D6B20788CDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6856EAA3-DAFE-40C5-9571-5D6B20788CDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6856EAA3-DAFE-40C5-9571-5D6B20788CDD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {29C2B2B8-0C41-42EF-843C-475069CFDF50}
+	EndGlobalSection
+EndGlobal

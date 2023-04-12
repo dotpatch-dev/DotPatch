@@ -1,0 +1,6 @@
+{
+  "name": "dotpatch",
+  "dependencies": [
+    "nethost"
+  ]
+}
