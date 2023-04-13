@@ -9,10 +9,16 @@ add_library(DotPatch.Runtime.Native SHARED
 	source/debug/console.cc
 	source/debug/logging.cc
 
+	source/hook/init.cc
+
 	source/dll_main.cc
 )
 target_include_directories(DotPatch.Runtime.Native PUBLIC include)
-target_link_libraries(DotPatch.Runtime.Native PRIVATE unofficial::nethost::nethost)
+target_link_libraries(DotPatch.Runtime.Native PRIVATE
+	unofficial::nethost::nethost
+	imgui-static
+	minhook
+)
 
 
 add_executable(DotPatch.Runtime.Native.Test

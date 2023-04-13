@@ -6,11 +6,20 @@ namespace DotPatch.Example.NierReplicantRemake;
 
 public class NierReplicantRemakePatch : IPatch
 {
+    private readonly IHookService _hookService;
+
     private NativeBox<string> _levelString = null!;
+
+    public NierReplicantRemakePatch(IHookService hookService)
+    {
+        _hookService = hookService;
+    }
+
     public void Load()
     {
         Console.WriteLine("Nier Replicant meme");
-
+        _hookService.CreateHook();
+        return;
         var replicantModule = Process
             .GetCurrentProcess()
             .MainModule;

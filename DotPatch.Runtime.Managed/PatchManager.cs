@@ -18,6 +18,8 @@ internal class PatchManager
 
     public void InitializePatches()
     {
+        _serviceCollection.AddSingleton<IHookService, HookServiceImpl>();
+
         foreach (var patchType in _builtinPatches)
         {
             _serviceCollection.AddSingleton(patchType);
